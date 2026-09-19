@@ -1,0 +1,88 @@
+/* Color scheme variables */
+:root {
+  --primary-color: #004d40;     /* deep teal */
+  --accent1-color: #ff9800;     /* vibrant orange */
+  --accent2-color: #e0f7fa;     /* light aqua */
+  --heading-font: 'Georgia', serif;
+  --body-font: 'Arial', sans-serif;
+}
+
+/* Reset box-model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body text */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* Page width and centering */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Basic margins and padding */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Remove underline from social media links */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero heading overlay */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+/* Hero article overlay */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: var(--accent2-color);
+  opacity: 0.9;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+/* Image inside hero article */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin: 8px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
