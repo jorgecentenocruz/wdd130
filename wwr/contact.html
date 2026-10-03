@@ -50,29 +50,36 @@
     </section>
 
     <section>
-      <h2>Send Us a Message</h2>
-      <form action="#" method="post">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
+  <h2>Send Us a Message</h2>
+  <form action="#" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
 
-        <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="General Inquiry"> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label><br>
+    <p>Purpose of Message:</p>
+    <label for="general">
+      <input type="radio" id="general" name="purpose" value="General Inquiry"> General Inquiry
+    </label><br>
+    <label for="reservation">
+      <input type="radio" id="reservation" name="purpose" value="Reservation Question"> Reservation Question
+    </label><br>
+    <label for="website">
+      <input type="radio" id="website" name="purpose" value="Website Suggestion"> Website Suggestion
+    </label><br>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label>
-          <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-        </label><br>
+    <label for="subscribe">
+      <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+    </label><br>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
   </main>
 
   <footer>
